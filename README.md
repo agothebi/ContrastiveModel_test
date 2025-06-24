@@ -24,22 +24,22 @@
 
 ## ⚙️ Installation
 
-1. Create a virtual environment with all requirements:
-
-```bash
-conda conda env create -f environment.yaml
-conda activate contrastive
-```
-
-2. Clone the repository:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/your-repo.git
 cd ContrastiveModel_test
 ```
 
+2. Create a virtual environment with all requirements:
+
+```bash
+conda conda env create -f environment.yaml
+conda activate contrastive
+```
+
 ## 💿 Dataset
-3. Download Kaggle Dataset
+1. Download Kaggle Dataset
 
 ```bash
 kaggle datasets download mitkir/shapenet
