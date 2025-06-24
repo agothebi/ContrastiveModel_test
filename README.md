@@ -34,7 +34,7 @@ cd ContrastiveModel_test
 2. Create a virtual environment with all requirements:
 
 ```bash
-conda conda env create -f environment.yaml
+conda env create -f environment.yaml
 conda activate contrastive
 ```
 

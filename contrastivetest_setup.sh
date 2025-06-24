@@ -5,8 +5,15 @@
 #SBATCH --constraint cuda11
 #SBATCH --output=set_env.out
 
+#Create the environment if it doesn't exist
+if [ ! -d "~/.conda/envs/contrastive" ]; then
+    conda create -n contrastive python=3.11 -y
+else
+    echo "Environment contrastive_test already exists."
+fi
+
 #Source and activate conda environment
-source /opt/conda/bin/activate contrastive_test
+source /opt/conda/bin/activate contrastive
 
 # Load necessary modules for GPU support
 module load CUDA/11.8
@@ -25,4 +32,7 @@ PYG_VERSION_URL="https://data.pyg.org/whl/torch-2.1.0.html"
 
 # Install PyG and dependencies from that URL
 pip install torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric -f $PYG_VERSION_URL
+
+# Install additional libraries
+pip install requirements.txt
 
