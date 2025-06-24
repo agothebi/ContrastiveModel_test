@@ -1,17 +1,12 @@
-# 🧠 Your Project Name
+# Contrastive Learning on 3D Point Clouds
 
-> One-line description of what your project does.
-
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python](https://img.shields.io/badge/python-3.8+-blue)
-![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
-
+> This is a repo for the codebook provided in this video : https://www.youtube.com/watch?v=XpUKZEGWqbU
+> 
 ---
 
 ## 📚 Table of Contents
 
 - [Overview](#overview)
-- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dataset](#dataset)
@@ -23,25 +18,31 @@
 
 ## 🚀 Overview
 
-Briefly describe what your project does, why it exists, and what problems it solves.
+> This project implements a contrastive learning model on 3D point cloud data using the ShapeNet dataset and EdgeConv encoder.
 
-Example:
-> This project implements a contrastive learning model on 3D point cloud data using the ShapeNet dataset.
-
----
-
-## ✨ Features
-
-- ✅ Feature 1
-- ✅ Feature 2
-- 🔧 Feature in development
 
 ---
 
 ## ⚙️ Installation
 
-1. Clone the repository:
+1. Create a virtual environment with all requirements:
+
+```bash
+conda conda env create -f environment.yaml
+conda activate contrastive
+```
+
+2. Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+cd ContrastiveModel_test
+```
+
+3. Download Kaggle Dataset
+
+```bash
+kaggle datasets download mitkir/shapenet
+unzip shapenet.zip
+```
+
