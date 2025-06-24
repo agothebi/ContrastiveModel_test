@@ -31,18 +31,33 @@ git clone https://github.com/yourusername/your-repo.git
 cd ContrastiveModel_test
 ```
 
-2. Create a virtual environment with all requirements:
+2. Run Batch script to create the virtual environment and download all the libraries
 
 ```bash
-conda env create -f environment.yaml
-conda activate contrastive
+sbatch contrastivetest_setup.sh
 ```
 
 ## 💿 Dataset
 1. Download Kaggle Dataset
 
+If you don't have Kaggle API setup, follow these instructions:
+
+    a. Get your API token:
+        Go to your Kaggle account's "Account" page. 
+        Scroll down to the "API" section and click "Create New API Token". This will download a kaggle.json file. 
+    b. Create the directory and move your json file there:
+        mkdir ~/.kaggle
+        mv kaggle.json ~/.kaggle
+        chmod 600 ~/.kaggle/kaggle.json # set permissions
+
+Then: 
 ```bash
 kaggle datasets download mitkir/shapenet
+unzip shapenet.zip
+```
+
+Easier Way: Just go to https://www.kaggle.com/datasets/mitkir/shapenet. Download the dataset. Upload it to the cluster. Then:
+```bash
 unzip shapenet.zip
 ```
 
@@ -59,6 +74,7 @@ mkdir -p ShapeNet/raw
 ```bash
 mv shapenetcore_partanno_segmentation_benchmark_v0_normal/* ShapeNet/raw
 ```
+#### replace 'shapenetcore_partanno_segmentation_benchmark_v0_normal' with your unzipped folder's name if needed
 
 3. Remove unecessary files
 ```bash
@@ -97,6 +113,6 @@ Should look like this:
 ##  🏃 Run the Notebook
 
 ```bash
-contrastive_learning.ipynb
+contrastive_learning_shapenet.ipynb
 ```
 

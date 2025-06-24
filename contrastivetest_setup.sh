@@ -9,7 +9,7 @@
 if [ ! -d "~/.conda/envs/contrastive" ]; then
     conda create -n contrastive python=3.11 -y
 else
-    echo "Environment contrastive_test already exists."
+    echo "Environment contrastive already exists."
 fi
 
 #Source and activate conda environment
