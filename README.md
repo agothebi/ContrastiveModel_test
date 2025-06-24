@@ -27,23 +27,23 @@
 1. Create a virtual environment with all requirements:
 
 ```bash
-$ conda conda env create -f environment.yaml
-$ conda activate contrastive
+conda conda env create -f environment.yaml
+conda activate contrastive
 ```
 
 2. Clone the repository:
 
 ```bash
-$ git clone https://github.com/yourusername/your-repo.git
-$ cd ContrastiveModel_test
+git clone https://github.com/yourusername/your-repo.git
+cd ContrastiveModel_test
 ```
 
 ## 💿 Dataset
 3. Download Kaggle Dataset
 
 ```bash
-$ kaggle datasets download mitkir/shapenet
-$ unzip shapenet.zip
+kaggle datasets download mitkir/shapenet
+unzip shapenet.zip
 ```
 
 ## 🛠️ Fix Folder Structure 
@@ -52,23 +52,25 @@ ShapeNet requires a very specific folder structure
 
 1. Create Dataset Folder
 ```bash
-$ mkdir -p ShapeNet/raw
+mkdir -p ShapeNet/raw
 
 ```
 2. Move dataset to the new Folder
 ```bash
-$ mv shapenetcore_partanno_segmentation_benchmark_v0_normal/* ShapeNet/raw
+mv shapenetcore_partanno_segmentation_benchmark_v0_normal/* ShapeNet/raw
 ```
 
 3. Remove unecessary files
 ```bash
-$ rm -rf shapenetcore_partanno_segmentation_benchmark_v0_normal shapenet.zip
+rm -rf shapenetcore_partanno_segmentation_benchmark_v0_normal shapenet.zip
 ```
 
 4. Check your folder structure
 ```bash
-$ tree ./ShapeNet -L 2
+tree ./ShapeNet -L 2
+```
 Should look like this:
+```bash
 ./ShapeNet
 └── raw
     ├── 02691156
@@ -94,5 +96,7 @@ Should look like this:
 
 ##  🏃 Run the Notebook
 
+```bash
 contrastive_learning.ipynb
+```
 
