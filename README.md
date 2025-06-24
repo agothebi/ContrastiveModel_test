@@ -94,5 +94,5 @@ Should look like this:
 
 ##  🏃 Run the Notebook
 
-contrastive_learning.ipynb
+contrastive_learning.ipy
 
