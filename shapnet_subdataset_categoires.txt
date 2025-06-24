@@ -1,17 +1,18 @@
-Folder (Synset ID)	Category Name
-02691156	Airplane
-02773838	Bag
-02954340	Cap
-02958343	Car
-03001627	Chair
-03261776	Earphone
-03467517	Guitar
-03624134	Knife
-03636649	Lamp
-03642806	Laptop
-03790512	Motorbike
-03797390	Mug
-03948459	Piano
-04099429	Rocket
-04225987	Skateboard
-04379243	Table
+| Synset ID | Category     | No. of Files |
+|-----------|--------------|--------------|
+| 02691156  | Airplane     | 5380         |
+| 02773838  | Bag          | 152          |
+| 02954340  | Cap          | 110          |
+| 02958343  | Car          | 1796         |
+| 03001627  | Chair        | 7492         |
+| 03261776  | Earphone     | 138          |
+| 03467517  | Guitar       | 1574         |
+| 03624134  | Knife        | 784          |
+| 03636649  | Lamp         | 3092         |
+| 03642806  | Laptop       | 890          |
+| 03790512  | Motorbike    | 404          |
+| 03797390  | Mug          | 368          |
+| 03948459  | Piano        | 550          |
+| 04099429  | Rocket       | 132          |
+| 04225987  | Skateboard   | 304          |
+| 04379243  | Table        | 10526        |
