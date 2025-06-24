@@ -1,0 +1,17 @@
+Folder (Synset ID)	Category Name
+02691156	Airplane
+02773838	Bag
+02954340	Cap
+02958343	Car
+03001627	Chair
+03261776	Earphone
+03467517	Guitar
+03624134	Knife
+03636649	Lamp
+03642806	Laptop
+03790512	Motorbike
+03797390	Mug
+03948459	Piano
+04099429	Rocket
+04225987	Skateboard
+04379243	Table
